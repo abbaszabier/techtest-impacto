@@ -37,7 +37,7 @@ export default function Catalogue() {
             className={`button ${category === "ATK" ? "active" : ""}`}
             onClick={() => setCategory("ATK")}
           >
-            ATK
+            Office Equipement
           </button>
           <button
             className={`button ${category === "Furniture" ? "active" : ""}`}
