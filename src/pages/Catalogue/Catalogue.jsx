@@ -27,13 +27,22 @@ export default function Catalogue() {
     <>
       <div className="wrapper-category">
         <header className="category">
-          <button className="button" onClick={() => setCategory("all")}>
+          <button
+            className={`button ${category === "all" ? "active" : ""}`}
+            onClick={() => setCategory("all")}
+          >
             All
           </button>
-          <button className="button" onClick={() => setCategory("ATK")}>
+          <button
+            className={`button ${category === "ATK" ? "active" : ""}`}
+            onClick={() => setCategory("ATK")}
+          >
             ATK
           </button>
-          <button className="button" onClick={() => setCategory("Furniture")}>
+          <button
+            className={`button ${category === "Furniture" ? "active" : ""}`}
+            onClick={() => setCategory("Furniture")}
+          >
             Furniture
           </button>
         </header>
